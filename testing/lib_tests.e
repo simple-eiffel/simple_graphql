@@ -17,7 +17,7 @@ feature -- Tests
 		local
 			l_obj: SIMPLE_GRAPHQL
 		do
-			create l_obj.make
+			create l_obj.make ("https://test.example.com/graphql")
 			assert ("created", l_obj /= Void)
 		end
 
