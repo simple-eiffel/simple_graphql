@@ -107,7 +107,7 @@ feature -- Conversion
 				l_json.put_string (l_op, "operationName").do_nothing
 			end
 
-			Result := l_json.to_json_string
+			Result := l_json.to_json_string.to_string_8
 		ensure
 			result_not_empty: not Result.is_empty
 			contains_query: Result.has_substring ("query")
